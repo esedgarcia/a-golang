@@ -25,13 +25,15 @@ This application uses a basic HTTP server written in Go. When deployed, it respo
 ## Installation
 
 1. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/username/greetings-app.git
    cd greetings-app
    ```
 
 2. **Set up dependencies**:
-    ```bash
+
+   ```bash
    go mod tidy
    ```
 
@@ -39,20 +41,20 @@ This application uses a basic HTTP server written in Go. When deployed, it respo
 
 To run the app locally, execute the following command:
 
-    ```bash
-   go run greetings.go
-   ```
+```bash
+go run greetings.go
+```
 
 ## Docker
-Build the Docker Image
+**Build the Docker Image**
 To build a Docker image for this application, use:
 
-    ```bash
-   docker build -t esedgarcia/greetings .
-   ```
+```bash
+docker build -t esedgarcia/greetings .
+```
 
 And, to run the docker container use:
 
-    ```bash
-   docker run -p 8080:8080 esedgarcia/greetings
-   ```
+```bash
+docker run -p 8080:8080 esedgarcia/greetings
+```
